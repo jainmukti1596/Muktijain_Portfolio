@@ -4,63 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mukti Jain — Performance Marketing Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#111}
-nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;border-bottom:1px solid #E5E7EB;background:#fff;position:sticky;top:0;z-index:100}
-.logo{font-size:19px;font-weight:500;letter-spacing:-0.5px;color:#111}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F5F5EF;color:#111;line-height:1.7}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;border-bottom:1px solid #E0DFD8;background:#F5F5EF;position:sticky;top:0;z-index:100}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;letter-spacing:-0.3px;color:#111;text-decoration:none;font-style:italic}
 .logo em{font-style:normal;color:#1D9E75}
 .nav-links{display:flex;gap:2.5rem}
 .nav-links a{font-size:14px;color:#6B7280;text-decoration:none;cursor:pointer;transition:color .15s}
 .nav-links a:hover{color:#0F6E56}
-.nav-btn{background:#0F6E56;color:#fff;border:none;padding:9px 22px;border-radius:6px;font-size:13px;font-family:inherit;cursor:pointer;font-weight:500;transition:opacity .15s}
-.nav-btn:hover{opacity:.88}
 
-.hero{display:grid;grid-template-columns:1.15fr 0.85fr;border-bottom:1px solid #E5E7EB;min-height:580px}
-.hero-left{padding:5.5rem 3.5rem 5.5rem 3rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid #E5E7EB}
+.hero{display:grid;grid-template-columns:1.15fr 0.85fr;border-bottom:1px solid #E0DFD8;min-height:580px}
+.hero-left{padding:5.5rem 3.5rem 5.5rem 3rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid #E0DFD8;background:#F5F5EF}
 .hero-tag{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:#0F6E56;background:#E1F5EE;padding:5px 14px;border-radius:20px;margin-bottom:1.5rem;width:fit-content}
 .hero-tag-dot{width:6px;height:6px;border-radius:50%;background:#1D9E75}
-.hero-hello{font-size:17px;color:#6B7280;margin-bottom:2px}
-.hero-name{font-size:68px;font-weight:500;letter-spacing:-3px;line-height:.95;margin-bottom:14px;color:#111}
+.hero-hello{font-family:'Cormorant Garamond',serif;font-size:22px;color:#6B7280;margin-bottom:2px;font-style:italic;font-weight:400}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:82px;font-weight:600;letter-spacing:-2px;line-height:.9;margin-bottom:14px;color:#111}
 .hero-name span{color:#1D9E75}
 .hero-divider{width:48px;height:3px;background:#1D9E75;border-radius:2px;margin-bottom:1.25rem}
-.hero-role{font-size:14px;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.75rem}
-.hero-desc{font-size:16px;color:#4B5563;line-height:1.8;margin-bottom:2.5rem;max-width:460px}
+.hero-role{font-size:13px;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.75rem}
+.hero-desc{font-size:16px;color:#4B5563;line-height:1.85;margin-bottom:2.5rem;max-width:460px}
 .hero-btns{display:flex;gap:12px}
 .btn-teal{background:#0F6E56;color:#fff;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-teal:hover{opacity:.88}
-.btn-outline{background:#fff;color:#111;border:1px solid #D1D5DB;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;transition:background .15s;text-decoration:none;display:inline-flex;align-items:center}
-.btn-outline:hover{background:#F9FAFB}
+.btn-outline{background:#F5F5EF;color:#111;border:1px solid #C8C8C0;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;transition:background .15s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-outline:hover{background:#EEEEE8}
 
-.hero-right{background:#F9FAFB;padding:3rem 2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
-.avatar-ring{width:190px;height:190px;border-radius:50%;border:2px solid #9FE1CB;background:#E1F5EE;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:500;color:#0F6E56;letter-spacing:-2px}
-.hero-stats{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#E5E7EB;border:1px solid #E5E7EB;border-radius:10px;overflow:hidden}
-.hs{background:#fff;padding:.9rem 1rem;text-align:center}
-.hs-val{font-size:22px;font-weight:500;color:#0F6E56}
+.hero-right{background:#EEEEE8;padding:3rem 2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.avatar-ring{width:200px;height:200px;border-radius:50%;border:3px solid #9FE1CB;overflow:hidden;flex-shrink:0}
+.avatar-ring img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-stats{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#D8D8D0;border:1px solid #D8D8D0;border-radius:10px;overflow:hidden}
+.hs{background:#F5F5EF;padding:.9rem 1rem;text-align:center}
+.hs-val{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:#0F6E56}
 .hs-label{font-size:11px;color:#9CA3AF;margin-top:3px}
 
-.about{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #E5E7EB}
-.about-left{padding:4.5rem 3.5rem 4.5rem 3rem;border-right:1px solid #E5E7EB}
-.about-right{padding:4.5rem 3rem;background:#F9FAFB}
+.about{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #E0DFD8}
+.about-left{padding:4.5rem 3.5rem 4.5rem 3rem;border-right:1px solid #E0DFD8;background:#F5F5EF}
+.about-right{padding:4.5rem 3rem;background:#EEEEE8}
 .eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:500;margin-bottom:10px}
-.sec-title{font-size:28px;font-weight:500;letter-spacing:-0.5px;margin-bottom:1.5rem;line-height:1.2;color:#111}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;letter-spacing:-0.5px;margin-bottom:1.5rem;line-height:1.15;color:#111}
 .body-txt{font-size:15px;color:#4B5563;line-height:1.85}
 .body-txt p+p{margin-top:1rem}
-.pull{margin-top:1.5rem;padding:1.1rem 1.25rem;background:#F0FBF7;border-left:3px solid #1D9E75;border-radius:0 8px 8px 0;font-size:14px;color:#0F6E56;line-height:1.75;font-style:italic}
-
-.info-list{border:1px solid #E5E7EB;border-radius:10px;overflow:hidden}
-.info-row{display:flex;align-items:center;gap:14px;padding:.85rem 1.1rem;border-bottom:1px solid #F3F4F6;background:#fff;transition:background .15s}
+.info-list{border:1px solid #E0DFD8;border-radius:10px;overflow:hidden}
+.info-row{display:flex;align-items:center;gap:14px;padding:.85rem 1.1rem;border-bottom:1px solid #E8E8E2;background:#F5F5EF;transition:background .15s}
 .info-row:last-child{border-bottom:none}
-.info-row:hover{background:#F9FAFB}
+.info-row:hover{background:#EEEEE8}
 .i-ico{width:32px;height:32px;background:#E1F5EE;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
 .i-label{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:.8px}
 .i-val{font-size:13px;font-weight:500;color:#111;margin-top:1px}
 .i-teal{color:#1D9E75}
+.i-quick{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:#6B7280;font-style:italic;margin-bottom:1.25rem}
 
 .skills-section{background:#141414;padding:5rem 3rem}
 .skills-inner{max-width:1000px;margin:0 auto}
 .eyebrow-dk{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:500;margin-bottom:10px}
-.title-dk{font-size:30px;font-weight:500;color:#fff;letter-spacing:-0.5px;margin-bottom:.4rem}
+.title-dk{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:#fff;letter-spacing:-0.5px;margin-bottom:.4rem}
 .sub-dk{font-size:15px;color:#6B7280;margin-bottom:3rem}
 .sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .sk-card{background:#1E1E1E;border:1px solid #2A2A2A;border-radius:12px;padding:1.5rem;transition:border-color .2s,background .2s}
@@ -74,24 +73,38 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 .sk-tag-dot{width:5px;height:5px;border-radius:50%;background:#1D9E75;flex-shrink:0}
 .sk-tag-dim{color:#4B5563}
 
-.work{border-bottom:1px solid #E5E7EB}
-.work-head{padding:3.5rem 3rem 0;max-width:100%}
-.work-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E5E7EB;margin-top:2rem}
-.wc{padding:2.5rem 3rem;border-right:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;cursor:pointer;transition:background .15s;background:#fff}
+.work{border-bottom:1px solid #E0DFD8;background:#F5F5EF}
+.work-head{padding:3.5rem 3rem 0}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E0DFD8;margin-top:2rem}
+.wc{padding:2.5rem 3rem;border-right:1px solid #E0DFD8;border-bottom:1px solid #E0DFD8;cursor:pointer;transition:background .15s;background:#F5F5EF;text-decoration:none;color:inherit;display:block}
 .wc:nth-child(2n){border-right:none}
-.wc:hover{background:#F9FAFB}
+.wc:hover{background:#EEEEE8}
 .wc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
 .wc-badge{font-size:11px;font-weight:500;padding:4px 11px;border-radius:5px;background:#E1F5EE;color:#0F6E56}
-.wc-arrow{font-size:18px;color:#D1D5DB;transition:color .15s}
+.wc-arrow{font-size:18px;color:#C8C8C0;transition:color .15s}
 .wc:hover .wc-arrow{color:#1D9E75}
-.wc h3{font-size:17px;font-weight:500;margin-bottom:6px;color:#111}
+.wc h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:6px;color:#111}
 .wc p{font-size:13px;color:#6B7280;line-height:1.7;margin-bottom:1.5rem}
 .wc-nums{display:flex;gap:2rem}
-.wn-v{font-size:24px;font-weight:500;color:#0F6E56;letter-spacing:-0.5px}
+.wn-v{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#0F6E56;letter-spacing:-0.5px}
 .wn-l{font-size:11px;color:#9CA3AF;margin-top:2px}
 
+.experience{padding:5rem 3rem;border-bottom:1px solid #E0DFD8;background:#F5F5EF}
+.exp-inner{max-width:800px;margin:0 auto}
+.timeline{margin-top:2.5rem;position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:1px;background:#E0DFD8}
+.tl-item{position:relative;padding-bottom:2.5rem;padding-left:2rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-2.4rem;top:5px;width:12px;height:12px;border-radius:50%;background:#F5F5EF;border:2px solid #C8C8C0;transition:border-color .15s}
+.tl-dot-active{background:#1D9E75;border-color:#1D9E75}
+.tl-item:hover .tl-dot{border-color:#1D9E75}
+.tl-year{font-size:11px;color:#9CA3AF;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.tl-role{font-size:16px;font-weight:500;color:#111;margin-bottom:2px}
+.tl-company{font-size:14px;color:#1D9E75;margin-bottom:6px}
+.tl-desc{font-size:14px;color:#6B7280;line-height:1.7}
+
 .cta{background:#0F6E56;padding:5.5rem 3rem;text-align:center}
-.cta-title{font-size:40px;font-weight:500;color:#fff;letter-spacing:-1px;margin-bottom:.75rem;line-height:1.2}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;color:#fff;letter-spacing:-1px;margin-bottom:.75rem;line-height:1.1}
 .cta-sub{font-size:16px;color:rgba(255,255,255,.7);margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.7}
 .cta-btns{display:flex;gap:12px;justify-content:center}
 .btn-white{background:#fff;color:#0F6E56;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
@@ -99,28 +112,28 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 .btn-teal-ol{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;transition:border-color .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-teal-ol:hover{border-color:#fff}
 
-footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-content:space-between;align-items:center;background:#fff}
+footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-content:space-between;align-items:center;background:#F5F5EF}
 .ft-l{font-size:13px;color:#9CA3AF}
-.ft-r{font-size:13px;color:#1D9E75;font-weight:500}
+.ft-r{font-family:'Cormorant Garamond',serif;font-size:16px;color:#1D9E75;font-style:italic}
 
 @media(max-width:768px){
   nav{padding:1rem 1.5rem}
   .nav-links{display:none}
   .hero{grid-template-columns:1fr}
-  .hero-left{padding:3rem 1.5rem}
+  .hero-left{padding:3rem 1.5rem;border-right:none}
   .hero-right{padding:2rem 1.5rem}
-  .hero-name{font-size:48px}
+  .hero-name{font-size:56px}
   .about{grid-template-columns:1fr}
-  .about-left{border-right:none;border-bottom:1px solid #E5E7EB;padding:3rem 1.5rem}
+  .about-left{border-right:none;border-bottom:1px solid #E0DFD8;padding:3rem 1.5rem}
   .about-right{padding:3rem 1.5rem}
   .sk-grid{grid-template-columns:1fr}
   .skills-section{padding:3rem 1.5rem}
+  .experience{padding:3rem 1.5rem}
   .work-grid{grid-template-columns:1fr}
-  .wc{border-right:none}
+  .wc{border-right:none;padding:2rem 1.5rem}
   .work-head{padding:2.5rem 1.5rem 0}
-  .wc{padding:2rem 1.5rem}
   .cta{padding:3.5rem 1.5rem}
-  .cta-title{font-size:28px}
+  .cta-title{font-size:36px}
   footer{padding:1.2rem 1.5rem;flex-direction:column;gap:6px;text-align:center}
 }
 </style>
@@ -128,14 +141,14 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
 <body>
 
 <nav>
-  <div class="logo">mukti<em>.</em>jain</div>
+  <a href="index.html" class="logo">mukti<em>.</em>jain</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
     <a href="#cta">Contact</a>
   </div>
-  <a class="btn-teal" href="mailto:jain.mukti15@gmail.com">Hire me</a>
 </nav>
 
 <div class="hero">
@@ -145,18 +158,20 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
     <div class="hero-name">Mukti<br><span>Jain</span></div>
     <div class="hero-divider"></div>
     <div class="hero-role">Performance Marketing Manager</div>
-    <div class="hero-desc">I manage multi-million euro paid media for premium European brands — turning strategy into spend that actually performs across Google, Meta, and beyond.</div>
+    <div class="hero-desc">I am a Performance Marketing Manager with 6 years of hands-on experience across search and social marketing. My career has taken me across multiple industries and markets, working with brands at very different scales and stages. What has stayed consistent is my approach — understand the business, build the right structure, and optimise until the numbers tell a better story.</div>
     <div class="hero-btns">
       <a class="btn-teal" href="#work">See my work</a>
       <a class="btn-outline" href="#cta">Download resume</a>
     </div>
   </div>
   <div class="hero-right">
-    <div class="avatar-ring">MJ</div>
+    <div class="avatar-ring">
+      <img src="photo.jpg" alt="Mukti Jain">
+    </div>
     <div class="hero-stats">
       <div class="hs"><div class="hs-val">€1M+</div><div class="hs-label">Ad spend managed</div></div>
       <div class="hs"><div class="hs-val">45+</div><div class="hs-label">Accounts across Europe</div></div>
-      <div class="hs"><div class="hs-val">5+ yrs</div><div class="hs-label">Performance marketing</div></div>
+      <div class="hs"><div class="hs-val">6+ yrs</div><div class="hs-label">Performance marketing</div></div>
       <div class="hs"><div class="hs-val">3</div><div class="hs-label">Industry awards</div></div>
     </div>
   </div>
@@ -167,21 +182,21 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
     <div class="eyebrow">About me</div>
     <div class="sec-title">The strategist<br>behind the spend</div>
     <div class="body-txt">
-      <p>I'm a Senior Performance Marketer based in Bengaluru — 5+ years deep in the world of paid media, where budgets are large, margins matter, and every optimisation has a business case.</p>
-      <p>At Publicis Media, I run a full European automobile portfolio end-to-end: the architecture, the bidding strategy, the tracking stack, and the executive narrative. I've taken the account base from 24 to 45+ — not by luck, but by building systems that consistently deliver.</p>
-      <div class="pull">"My edge isn't just knowing the platforms — it's understanding the business behind the brief, and making the data tell a story that drives decisions."</div>
+      <p>I'm a Senior Performance Marketer based in Bengaluru with 6+ years of experience in paid media, managing €1M+ in annual ad spend across European markets, where every optimisation is tied to measurable business impact.</p>
+      <p>At Publicis Groupe, I manage a full European portfolio end-to-end — owning campaign architecture, bidding strategy, tracking, and performance strategy across markets.</p>
+      <p>I focus on driving measurable outcomes, ensuring spend translates into real business impact.</p>
     </div>
   </div>
   <div class="about-right">
     <div class="eyebrow">Quick info</div>
-    <div class="sec-title">At a glance</div>
+    <div class="i-quick">The quick version</div>
     <div class="info-list">
-      <div class="info-row"><div class="i-ico">💼</div><div><div class="i-label">Role</div><div class="i-val">Business Manager · Publicis Media</div></div></div>
+      <div class="info-row"><div class="i-ico">💼</div><div><div class="i-label">Role</div><div class="i-val">Business Manager · Publicis Groupe</div></div></div>
       <div class="info-row"><div class="i-ico">📍</div><div><div class="i-label">Location</div><div class="i-val">Bengaluru, India</div></div></div>
-      <div class="info-row"><div class="i-ico">🎯</div><div><div class="i-label">Specialisation</div><div class="i-val">Google Ads · Meta · SA360</div></div></div>
+      <div class="info-row"><div class="i-ico">🎯</div><div><div class="i-label">Specialisation</div><div class="i-val">Search &amp; Social Marketing</div></div></div>
       <div class="info-row"><div class="i-ico">🎓</div><div><div class="i-label">Education</div><div class="i-val">B.A. Applied Psychology</div></div></div>
       <div class="info-row"><div class="i-ico">✉️</div><div><div class="i-label">Email</div><div class="i-val i-teal">jain.mukti15@gmail.com</div></div></div>
-      <div class="info-row"><div class="i-ico">🔗</div><div><div class="i-label">LinkedIn</div><div class="i-val i-teal">linkedin.com/in/muktijain</div></div></div>
+      <div class="info-row"><div class="i-ico">🔗</div><div><div class="i-label">LinkedIn</div><div class="i-val i-teal">linkedin.com/in/mukti-jain-marketer</div></div></div>
     </div>
   </div>
 </div>
@@ -193,10 +208,7 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
     <div class="sub-dk">Platforms, tools and disciplines I use every day</div>
     <div class="sk-grid">
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-          <div class="sk-card-title">Paid Search</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div><div class="sk-card-title">Paid Search</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Google Search</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Performance Max</div>
@@ -206,23 +218,17 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div class="sk-card-title">Paid Social</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="sk-card-title">Paid Social</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Meta Ads Manager</div>
-          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Awareness Campaigns</div>
+          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Conversion Campaigns</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Traffic &amp; Retargeting</div>
-          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Audience Segmentation</div>
+          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Pixel Tracking</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Campaign Scaling</div>
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <div class="sk-card-title">Analytics &amp; Tracking</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="3"/></svg></div><div class="sk-card-title">Analytics &amp; Tracking</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>GA4</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Floodlight</div>
@@ -232,36 +238,25 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-          <div class="sk-card-title">Optimisation</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div class="sk-card-title">Optimisation</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Smart Bidding</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>A/B Testing</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>CRO &amp; Funnel Analysis</div>
-          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Budget Pacing</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Account Auditing</div>
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
-          <div class="sk-card-title">Reporting</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div><div class="sk-card-title">Reporting</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Looker Studio</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Advanced Excel</div>
-          <div class="sk-tag-row"><span class="sk-tag-dot"></span>Executive Decks</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>ROI Analysis</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Stakeholder Reporting</div>
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-card-head">
-          <div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
-          <div class="sk-card-title">Other Platforms</div>
-        </div>
+        <div class="sk-card-head"><div class="sk-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="sk-card-title">Other Platforms</div></div>
         <div class="sk-tags">
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>DV360</div>
           <div class="sk-tag-row"><span class="sk-tag-dot"></span>Amazon Ads</div>
@@ -280,41 +275,75 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
     <div class="sec-title">Work that moved the needle</div>
   </div>
   <div class="work-grid">
-    <div class="wc">
-      <div class="wc-top"><span class="wc-badge">Google Ads · Meta</span><span class="wc-arrow">↗</span></div>
-      <h3>European Auto Portfolio</h3>
-      <p>€1M+ annual spend across Europe for a premium automobile brand — campaign architecture, Smart Bidding, and stakeholder reporting.</p>
+    <a class="wc" href="case-study-1.html">
+      <div class="wc-top"><span class="wc-badge">Search · Social · SA360</span><span class="wc-arrow">↗</span></div>
+      <h3>European Automobile Portfolio</h3>
+      <p>Rebuilt campaign architecture for a leading European two-wheeler brand mid-budget-crisis. Less spend, same results.</p>
       <div class="wc-nums">
         <div><div class="wn-v">€1M+</div><div class="wn-l">Ad spend</div></div>
-        <div><div class="wn-v">2×</div><div class="wn-l">Portfolio growth</div></div>
-        <div><div class="wn-v">3 yrs</div><div class="wn-l">Delivered</div></div>
+        <div><div class="wn-v">40+</div><div class="wn-l">Accounts</div></div>
       </div>
-    </div>
-    <div class="wc">
-      <div class="wc-top"><span class="wc-badge">Google Ads</span><span class="wc-arrow">↗</span></div>
-      <h3>Subscription Growth · GiveIndia</h3>
-      <p>Restructured Search and Display campaigns for India's largest donation platform, driving a significant lift in subscriptions.</p>
+    </a>
+    <a class="wc" href="case-study-2.html">
+      <div class="wc-top"><span class="wc-badge">Search · Social</span><span class="wc-arrow">↗</span></div>
+      <h3>Subscription &amp; Donation Growth · Give</h3>
+      <p>Built paid media from scratch for one of India's most trusted donation platforms. Grew donations month on month.</p>
       <div class="wc-nums">
-        <div><div class="wn-v">43%</div><div class="wn-l">Subscription lift</div></div>
-        <div><div class="wn-v">6+</div><div class="wn-l">Brand partners</div></div>
+        <div><div class="wn-v">43%</div><div class="wn-l">Blog conversion lift</div></div>
+        <div><div class="wn-v">9+</div><div class="wn-l">Brand partners</div></div>
       </div>
-    </div>
-    <div class="wc">
-      <div class="wc-top"><span class="wc-badge">Meta Ads</span><span class="wc-arrow">↗</span></div>
-      <h3>4-Country Expansion · DAR</h3>
-      <p>Scaled a nonprofit's paid social campaigns internationally — new markets, new audiences, measurable impact on donations.</p>
+    </a>
+    <a class="wc" href="case-study-3.html">
+      <div class="wc-top"><span class="wc-badge">Search · Social</span><span class="wc-arrow">↗</span></div>
+      <h3>Multi-Market Growth · DAR 🐾</h3>
+      <p>Took a small animal shelter from local to international. Campaigns across 3 countries for a cause close to my heart.</p>
       <div class="wc-nums">
-        <div><div class="wn-v">4</div><div class="wn-l">Markets launched</div></div>
-        <div><div class="wn-v">↑</div><div class="wn-l">Reach &amp; donations</div></div>
+        <div><div class="wn-v">3</div><div class="wn-l">Countries</div></div>
+        <div><div class="wn-v">↑</div><div class="wn-l">Donations</div></div>
       </div>
-    </div>
-    <div class="wc">
-      <div class="wc-top"><span class="wc-badge">Amazon Ads</span><span class="wc-arrow">↗</span></div>
-      <h3>Amazon GTM Launch · Cognizant</h3>
-      <p>Built a full go-to-market strategy for a Dubai brand on Amazon while managing top apparel and footwear accounts.</p>
-      <div class="wc-nums">
-        <div><div class="wn-v">Top 20</div><div class="wn-l">Brands managed</div></div>
-        <div><div class="wn-v">1</div><div class="wn-l">New market</div></div>
+    </a>
+  </div>
+</div>
+
+<div class="experience" id="experience">
+  <div class="exp-inner">
+    <div class="eyebrow">Experience</div>
+    <div class="sec-title">Where I've worked</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot tl-dot-active"></div>
+        <div class="tl-year">2022 — Present</div>
+        <div class="tl-role">Business Manager</div>
+        <div class="tl-company">Publicis Groupe · Bengaluru</div>
+        <div class="tl-desc">Managing €1M+ in annual paid media across search and social for 40+ accounts across 8 European markets.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2022</div>
+        <div class="tl-role">Freelance Digital Marketing Consultant</div>
+        <div class="tl-company">Dharamshala Animal Rescue · Remote 🐾</div>
+        <div class="tl-desc">Rebuilt digital strategy for an animal rescue NGO in Himachal Pradesh, expanding campaigns across India, the US, and Australia.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2021</div>
+        <div class="tl-role">Senior Process Executive</div>
+        <div class="tl-company">Cognizant · Bengaluru</div>
+        <div class="tl-desc">Managed Amazon Ads for top 20 apparel and footwear brands. Executed a full go-to-market launch on Amazon for a Dubai-based brand.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2021</div>
+        <div class="tl-role">Client Service Analyst</div>
+        <div class="tl-company">CJ Affiliate · Bengaluru</div>
+        <div class="tl-desc">Managed affiliate accounts for global brands including Swarovski, Etihad, and Staples. Onboarded 11 new clients in 3 months.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2019 — 2020</div>
+        <div class="tl-role">Digital Marketing Executive</div>
+        <div class="tl-company">Give · Bengaluru</div>
+        <div class="tl-desc">Contributed to building paid media from scratch across search and social. Managed co-marketing partnerships with Flipkart, PhonePe, Swiggy and more.</div>
       </div>
     </div>
   </div>
@@ -322,10 +351,10 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E5E7EB;display:flex;justify-con
 
 <div class="cta" id="cta">
   <div class="cta-title">Ready to make your<br>ad spend work harder?</div>
-  <div class="cta-sub">Whether you need a performance marketing lead, a paid media strategist, or someone to own your Google &amp; Meta from day one — let's talk.</div>
+  <div class="cta-sub">Whether you need a performance marketing lead, a paid media strategist, or someone to own your search and social from day one, let's talk.</div>
   <div class="cta-btns">
     <a class="btn-white" href="mailto:jain.mukti15@gmail.com">Get in touch</a>
-    <a class="btn-teal-ol" href="https://linkedin.com/in/muktijain" target="_blank">View LinkedIn ↗</a>
+    <a class="btn-teal-ol" href="https://linkedin.com/in/mukti-jain-marketer" target="_blank">View LinkedIn ↗</a>
   </div>
 </div>
 
