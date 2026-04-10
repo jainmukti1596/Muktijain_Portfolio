@@ -4,31 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mukti Jain — Performance Marketing Manager</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F5F5EF;color:#111;line-height:1.7}
+body{font-family:'Lora',serif;background:#F5F5EF;color:#111;line-height:1.7}
 nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;border-bottom:1px solid #E0DFD8;background:#F5F5EF;position:sticky;top:0;z-index:100}
 .logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;letter-spacing:-0.3px;color:#111;text-decoration:none;font-style:italic}
 .logo em{font-style:normal;color:#1D9E75}
 .nav-links{display:flex;gap:2.5rem}
-.nav-links a{font-size:14px;color:#6B7280;text-decoration:none;cursor:pointer;transition:color .15s}
+.nav-links a{font-size:14px;color:#6B7280;text-decoration:none;cursor:pointer;transition:color .15s;font-family:'Lora',serif}
 .nav-links a:hover{color:#0F6E56}
 
 .hero{display:grid;grid-template-columns:1.15fr 0.85fr;border-bottom:1px solid #E0DFD8;min-height:580px}
 .hero-left{padding:5.5rem 3.5rem 5.5rem 3rem;display:flex;flex-direction:column;justify-content:center;border-right:1px solid #E0DFD8;background:#F5F5EF}
-.hero-tag{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:#0F6E56;background:#E1F5EE;padding:5px 14px;border-radius:20px;margin-bottom:1.5rem;width:fit-content}
-.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:#1D9E75}
 .hero-hello{font-family:'Cormorant Garamond',serif;font-size:22px;color:#6B7280;margin-bottom:2px;font-style:italic;font-weight:400}
 .hero-name{font-family:'Cormorant Garamond',serif;font-size:82px;font-weight:600;letter-spacing:-2px;line-height:.9;margin-bottom:14px;color:#111}
 .hero-name span{color:#1D9E75}
 .hero-divider{width:48px;height:3px;background:#1D9E75;border-radius:2px;margin-bottom:1.25rem}
-.hero-role{font-size:13px;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.75rem}
-.hero-desc{font-size:16px;color:#4B5563;line-height:1.85;margin-bottom:2.5rem;max-width:460px}
+.hero-role{font-size:13px;color:#6B7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.75rem;font-family:'Lora',serif}
+.hero-desc{font-size:16px;color:#4B5563;line-height:1.85;margin-bottom:2.5rem;max-width:460px;font-family:'Lora',serif}
 .hero-btns{display:flex;gap:12px}
-.btn-teal{background:#0F6E56;color:#fff;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-teal{background:#0F6E56;color:#fff;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:'Lora',serif;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-teal:hover{opacity:.88}
-.btn-outline{background:#F5F5EF;color:#111;border:1px solid #C8C8C0;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;transition:background .15s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-outline{background:#F5F5EF;color:#111;border:1px solid #C8C8C0;padding:13px 32px;border-radius:7px;font-size:14px;font-family:'Lora',serif;cursor:pointer;transition:background .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-outline:hover{background:#EEEEE8}
 
 .hero-right{background:#EEEEE8;padding:3rem 2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
@@ -37,57 +35,82 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 .hero-stats{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#D8D8D0;border:1px solid #D8D8D0;border-radius:10px;overflow:hidden}
 .hs{background:#F5F5EF;padding:.9rem 1rem;text-align:center}
 .hs-val{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:#0F6E56}
-.hs-label{font-size:11px;color:#9CA3AF;margin-top:3px}
+.hs-label{font-size:11px;color:#9CA3AF;margin-top:3px;font-family:'Lora',serif}
 
 .about{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #E0DFD8}
 .about-left{padding:4.5rem 3.5rem 4.5rem 3rem;border-right:1px solid #E0DFD8;background:#F5F5EF}
 .about-right{padding:4.5rem 3rem;background:#EEEEE8}
-.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:500;margin-bottom:10px}
+.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:700;margin-bottom:10px;font-family:'Lora',serif}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;letter-spacing:-0.5px;margin-bottom:1.5rem;line-height:1.15;color:#111}
-.body-txt{font-size:15px;color:#4B5563;line-height:1.85}
+.body-txt{font-size:15px;color:#4B5563;line-height:1.85;font-family:'Lora',serif}
 .body-txt p+p{margin-top:1rem}
 .info-list{border:1px solid #E0DFD8;border-radius:10px;overflow:hidden}
 .info-row{display:flex;align-items:center;gap:14px;padding:.85rem 1.1rem;border-bottom:1px solid #E8E8E2;background:#F5F5EF;transition:background .15s}
 .info-row:last-child{border-bottom:none}
 .info-row:hover{background:#EEEEE8}
 .i-ico{width:32px;height:32px;background:#E1F5EE;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
-.i-label{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:.8px}
-.i-val{font-size:13px;font-weight:500;color:#111;margin-top:1px}
+.i-label{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:.8px;font-family:'Lora',serif}
+.i-val{font-size:13px;font-weight:500;color:#111;margin-top:1px;font-family:'Lora',serif}
 .i-teal{color:#1D9E75}
 .i-quick{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:#6B7280;font-style:italic;margin-bottom:1.25rem}
 
 .skills-section{background:#141414;padding:5rem 3rem}
 .skills-inner{max-width:1000px;margin:0 auto}
-.eyebrow-dk{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:500;margin-bottom:10px}
+.eyebrow-dk{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1D9E75;font-weight:700;margin-bottom:10px;font-family:'Lora',serif}
 .title-dk{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:#fff;letter-spacing:-0.5px;margin-bottom:.4rem}
-.sub-dk{font-size:15px;color:#6B7280;margin-bottom:3rem}
+.sub-dk{font-size:15px;color:#6B7280;margin-bottom:3rem;font-family:'Lora',serif}
 .sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .sk-card{background:#1E1E1E;border:1px solid #2A2A2A;border-radius:12px;padding:1.5rem;transition:border-color .2s,background .2s}
 .sk-card:hover{background:#222;border-color:#1D9E75}
 .sk-card-head{display:flex;align-items:center;gap:12px;margin-bottom:1.1rem;padding-bottom:1rem;border-bottom:1px solid #2A2A2A}
 .sk-card-ico{width:40px;height:40px;border-radius:10px;background:#1A3A2E;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .sk-card-ico svg{width:20px;height:20px}
-.sk-card-title{font-size:14px;font-weight:500;color:#F0FBF7}
+.sk-card-title{font-size:14px;font-weight:700;color:#F0FBF7;font-family:'Lora',serif}
 .sk-tags{display:flex;flex-direction:column;gap:7px}
-.sk-tag-row{display:flex;align-items:center;gap:8px;font-size:13px;color:#9CA3AF}
+.sk-tag-row{display:flex;align-items:center;gap:8px;font-size:13px;color:#9CA3AF;font-family:'Lora',serif}
 .sk-tag-dot{width:5px;height:5px;border-radius:50%;background:#1D9E75;flex-shrink:0}
 .sk-tag-dim{color:#4B5563}
 
 .work{border-bottom:1px solid #E0DFD8;background:#F5F5EF}
 .work-head{padding:3.5rem 3rem 0}
 .work-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E0DFD8;margin-top:2rem}
+.work-grid-bottom{display:flex;justify-content:center;border-top:1px solid #E0DFD8}
 .wc{padding:2.5rem 3rem;border-right:1px solid #E0DFD8;border-bottom:1px solid #E0DFD8;cursor:pointer;transition:background .15s;background:#F5F5EF;text-decoration:none;color:inherit;display:block}
 .wc:nth-child(2n){border-right:none}
 .wc:hover{background:#EEEEE8}
+.wc-single{width:50%;padding:2.5rem 3rem;cursor:pointer;transition:background .15s;background:#F5F5EF;text-decoration:none;color:inherit;display:block;border-right:none}
+.wc-single:hover{background:#EEEEE8}
 .wc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
-.wc-badge{font-size:11px;font-weight:500;padding:4px 11px;border-radius:5px;background:#E1F5EE;color:#0F6E56}
+.wc-badge{font-size:11px;font-weight:700;padding:4px 11px;border-radius:5px;background:#E1F5EE;color:#0F6E56;font-family:'Lora',serif}
 .wc-arrow{font-size:18px;color:#C8C8C0;transition:color .15s}
-.wc:hover .wc-arrow{color:#1D9E75}
-.wc h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:6px;color:#111}
-.wc p{font-size:13px;color:#6B7280;line-height:1.7;margin-bottom:1.5rem}
+.wc:hover .wc-arrow,.wc-single:hover .wc-arrow{color:#1D9E75}
+.wc h3,.wc-single h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:6px;color:#111}
+.wc p,.wc-single p{font-size:13px;color:#6B7280;line-height:1.7;margin-bottom:1.5rem;font-family:'Lora',serif}
 .wc-nums{display:flex;gap:2rem}
 .wn-v{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#0F6E56;letter-spacing:-0.5px}
-.wn-l{font-size:11px;color:#9CA3AF;margin-top:2px}
+.wn-l{font-size:11px;color:#9CA3AF;margin-top:2px;font-family:'Lora',serif}
+
+.metrics-section{background:#0D0D0D;padding:5rem 3rem;border-bottom:1px solid #1A1A1A}
+.metrics-inner{max-width:900px;margin:0 auto}
+.metrics-top{text-align:center;margin-bottom:3.5rem}
+.metrics-eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#5DCAA5;font-weight:700;margin-bottom:14px;font-family:'Lora',serif}
+.metrics-title{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;color:#fff;letter-spacing:-0.5px;margin-bottom:10px;line-height:1.1}
+.metrics-title span{color:#5DCAA5}
+.metrics-sub{font-size:15px;color:#555;max-width:500px;margin:0 auto;line-height:1.7;font-family:'Lora',serif}
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mc{background:#161616;border:1px solid #1D9E75;border-radius:14px;padding:1.75rem}
+.mc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem}
+.mc-label{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#5DCAA5;font-weight:700;font-family:'Lora',serif}
+.mc-badge{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#5DCAA5;background:#0D2D22;padding:5px 12px;border-radius:20px;border:1px solid #1D9E75;font-family:'Lora',serif}
+.mc-bars{display:flex;flex-direction:column;gap:10px;margin-bottom:1.25rem}
+.mc-bar-row{display:flex;align-items:center;gap:10px}
+.mc-year{font-size:12px;color:#555;width:28px;flex-shrink:0;font-weight:700;font-family:'Lora',serif}
+.mc-track{flex:1;background:#0D2D22;border-radius:3px;height:6px;overflow:hidden;border:1px solid #1A3A2E}
+.mc-fill{height:100%;border-radius:3px}
+.mc-before{background:#1A3A2E}
+.mc-after{background:#5DCAA5}
+.mc-note{font-size:13px;color:#555;line-height:1.6;border-top:1px solid #1A3A2E;padding-top:1rem;font-family:'Lora',serif;font-weight:500}
+.mc-note strong{color:#5DCAA5;font-weight:700}
 
 .experience{padding:5rem 3rem;border-bottom:1px solid #E0DFD8;background:#F5F5EF}
 .exp-inner{max-width:800px;margin:0 auto}
@@ -98,22 +121,22 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem
 .tl-dot{position:absolute;left:-2.4rem;top:5px;width:12px;height:12px;border-radius:50%;background:#F5F5EF;border:2px solid #C8C8C0;transition:border-color .15s}
 .tl-dot-active{background:#1D9E75;border-color:#1D9E75}
 .tl-item:hover .tl-dot{border-color:#1D9E75}
-.tl-year{font-size:11px;color:#9CA3AF;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.tl-role{font-size:16px;font-weight:500;color:#111;margin-bottom:2px}
-.tl-company{font-size:14px;color:#1D9E75;margin-bottom:6px}
-.tl-desc{font-size:14px;color:#6B7280;line-height:1.7}
+.tl-year{font-size:11px;color:#9CA3AF;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;font-family:'Lora',serif}
+.tl-role{font-size:16px;font-weight:700;color:#111;margin-bottom:2px;font-family:'Lora',serif}
+.tl-company{font-size:14px;color:#1D9E75;margin-bottom:6px;font-family:'Lora',serif}
+.tl-desc{font-size:14px;color:#6B7280;line-height:1.7;font-family:'Lora',serif}
 
 .cta{background:#0F6E56;padding:5.5rem 3rem;text-align:center}
 .cta-title{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;color:#fff;letter-spacing:-1px;margin-bottom:.75rem;line-height:1.1}
-.cta-sub{font-size:16px;color:rgba(255,255,255,.7);margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.7}
+.cta-sub{font-size:16px;color:rgba(255,255,255,.7);margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.7;font-family:'Lora',serif}
 .cta-btns{display:flex;gap:12px;justify-content:center}
-.btn-white{background:#fff;color:#0F6E56;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-white{background:#fff;color:#0F6E56;border:none;padding:13px 32px;border-radius:7px;font-size:14px;font-family:'Lora',serif;cursor:pointer;font-weight:500;transition:opacity .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-white:hover{opacity:.9}
-.btn-teal-ol{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:13px 32px;border-radius:7px;font-size:14px;font-family:inherit;cursor:pointer;transition:border-color .15s;text-decoration:none;display:inline-flex;align-items:center}
+.btn-teal-ol{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:13px 32px;border-radius:7px;font-size:14px;font-family:'Lora',serif;cursor:pointer;transition:border-color .15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-teal-ol:hover{border-color:#fff}
 
 footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-content:space-between;align-items:center;background:#F5F5EF}
-.ft-l{font-size:13px;color:#9CA3AF}
+.ft-l{font-size:13px;color:#9CA3AF;font-family:'Lora',serif}
 .ft-r{font-family:'Cormorant Garamond',serif;font-size:16px;color:#1D9E75;font-style:italic}
 
 @media(max-width:768px){
@@ -128,9 +151,12 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
   .about-right{padding:3rem 1.5rem}
   .sk-grid{grid-template-columns:1fr}
   .skills-section{padding:3rem 1.5rem}
+  .metrics-section{padding:3rem 1.5rem}
+  .metrics-grid{grid-template-columns:1fr}
   .experience{padding:3rem 1.5rem}
   .work-grid{grid-template-columns:1fr}
   .wc{border-right:none;padding:2rem 1.5rem}
+  .wc-single{width:100%;padding:2rem 1.5rem}
   .work-head{padding:2.5rem 1.5rem 0}
   .cta{padding:3.5rem 1.5rem}
   .cta-title{font-size:36px}
@@ -153,7 +179,6 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
 
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-tag"><span class="hero-tag-dot"></span>Open to opportunities</div>
     <div class="hero-hello">Hi, I'm</div>
     <div class="hero-name">Mukti<br><span>Jain</span></div>
     <div class="hero-divider"></div>
@@ -172,7 +197,7 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
       <div class="hs"><div class="hs-val">€1M+</div><div class="hs-label">Ad spend managed</div></div>
       <div class="hs"><div class="hs-val">45+</div><div class="hs-label">Accounts across Europe</div></div>
       <div class="hs"><div class="hs-val">6+ yrs</div><div class="hs-label">Performance marketing</div></div>
-      <div class="hs"><div class="hs-val">3</div><div class="hs-label">Industry awards</div></div>
+      <div class="hs"><div class="hs-val">10+</div><div class="hs-label">Markets worldwide</div></div>
     </div>
   </div>
 </div>
@@ -276,16 +301,17 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
   </div>
   <div class="work-grid">
     <a class="wc" href="case-study-1.html">
-      <div class="wc-top"><span class="wc-badge">Search · Social · SA360</span><span class="wc-arrow">↗</span></div>
+      <div class="wc-top"><span class="wc-badge">Google Ads · Meta · SA360</span><span class="wc-arrow">↗</span></div>
       <h3>European Automobile Portfolio</h3>
       <p>Rebuilt campaign architecture for a leading European two-wheeler brand mid-budget-crisis. Less spend, same results.</p>
       <div class="wc-nums">
         <div><div class="wn-v">€1M+</div><div class="wn-l">Ad spend</div></div>
         <div><div class="wn-v">40+</div><div class="wn-l">Accounts</div></div>
+        <div><div class="wn-v">↑</div><div class="wn-l">Conversions</div></div>
       </div>
     </a>
     <a class="wc" href="case-study-2.html">
-      <div class="wc-top"><span class="wc-badge">Search · Social</span><span class="wc-arrow">↗</span></div>
+      <div class="wc-top"><span class="wc-badge">Google Ads · Meta · GA4</span><span class="wc-arrow">↗</span></div>
       <h3>Subscription &amp; Donation Growth · Give</h3>
       <p>Built paid media from scratch for one of India's most trusted donation platforms. Grew donations month on month.</p>
       <div class="wc-nums">
@@ -293,15 +319,62 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
         <div><div class="wn-v">9+</div><div class="wn-l">Brand partners</div></div>
       </div>
     </a>
-    <a class="wc" href="case-study-3.html">
-      <div class="wc-top"><span class="wc-badge">Search · Social</span><span class="wc-arrow">↗</span></div>
+  </div>
+  <div class="work-grid-bottom">
+    <a class="wc-single" href="case-study-3.html">
+      <div class="wc-top"><span class="wc-badge">Google Ads · Meta</span><span class="wc-arrow">↗</span></div>
       <h3>Multi-Market Growth · DAR 🐾</h3>
       <p>Took a small animal shelter from local to international. Campaigns across 3 countries for a cause close to my heart.</p>
       <div class="wc-nums">
         <div><div class="wn-v">3</div><div class="wn-l">Countries</div></div>
-        <div><div class="wn-v">↑</div><div class="wn-l">Donations</div></div>
+        <div><div class="wn-v">↑</div><div class="wn-l">Awareness</div></div>
       </div>
     </a>
+  </div>
+</div>
+
+<div class="metrics-section">
+  <div class="metrics-inner">
+    <div class="metrics-top">
+      <div class="metrics-eyebrow">Proven results</div>
+      <div class="metrics-title">Numbers that<br><span>speak for themselves</span></div>
+      <div class="metrics-sub">Results across different markets, achieved during a period of significant budget reduction</div>
+    </div>
+    <div class="metrics-grid">
+      <div class="mc">
+        <div class="mc-top">
+          <div class="mc-label">CPL</div>
+          <div class="mc-badge">↓ 14% improved</div>
+        </div>
+        <div class="mc-bars">
+          <div class="mc-bar-row"><div class="mc-year">2024</div><div class="mc-track"><div class="mc-fill mc-before" style="width:88%"></div></div></div>
+          <div class="mc-bar-row"><div class="mc-year">2025</div><div class="mc-track"><div class="mc-fill mc-after" style="width:74%"></div></div></div>
+        </div>
+        <div class="mc-note">Cost per lead <strong>reduced</strong> year on year</div>
+      </div>
+      <div class="mc">
+        <div class="mc-top">
+          <div class="mc-label">CTR</div>
+          <div class="mc-badge">↑ 26% improved</div>
+        </div>
+        <div class="mc-bars">
+          <div class="mc-bar-row"><div class="mc-year">2023</div><div class="mc-track"><div class="mc-fill mc-before" style="width:60%"></div></div></div>
+          <div class="mc-bar-row"><div class="mc-year">2025</div><div class="mc-track"><div class="mc-fill mc-after" style="width:86%"></div></div></div>
+        </div>
+        <div class="mc-note">Click-through rate <strong>grew consistently</strong> over 2 years</div>
+      </div>
+      <div class="mc">
+        <div class="mc-top">
+          <div class="mc-label">CPC</div>
+          <div class="mc-badge">↓ 33% improved</div>
+        </div>
+        <div class="mc-bars">
+          <div class="mc-bar-row"><div class="mc-year">2023</div><div class="mc-track"><div class="mc-fill mc-before" style="width:90%"></div></div></div>
+          <div class="mc-bar-row"><div class="mc-year">2025</div><div class="mc-track"><div class="mc-fill mc-after" style="width:57%"></div></div></div>
+        </div>
+        <div class="mc-note">Cost per click <strong>dropped sharply</strong> over 2 years</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -320,7 +393,7 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-year">2022</div>
-        <div class="tl-role">Digital Marketing Consultant</div>
+        <div class="tl-role">Freelance Digital Marketing Consultant</div>
         <div class="tl-company">Dharamshala Animal Rescue · Remote 🐾</div>
         <div class="tl-desc">Rebuilt digital strategy for an animal rescue NGO in Himachal Pradesh, expanding campaigns across India, the US, and Australia.</div>
       </div>
@@ -351,7 +424,7 @@ footer{padding:1.5rem 3rem;border-top:1px solid #E0DFD8;display:flex;justify-con
 
 <div class="cta" id="cta">
   <div class="cta-title">Ready to make your<br>ad spend work harder?</div>
-  <div class="cta-sub">Whether you need a performance marketing lead, a paid media strategist, or someone to own your search and social from day one, let's talk.</div>
+  <div class="cta-sub">Good work starts with a good conversation. Let's have one.</div>
   <div class="cta-btns">
     <a class="btn-white" href="mailto:jain.mukti15@gmail.com">Get in touch</a>
     <a class="btn-teal-ol" href="https://linkedin.com/in/mukti-jain-marketer" target="_blank">View LinkedIn ↗</a>
